@@ -89,18 +89,6 @@ void hashTable::display( ostream & out ){
 }
 
 size_t hashTable::hashValue(const std::string word){
-	/*unsigned long h = 0, g; 
-	char *arEnd=arKey+nKeyLength; 
-
-
-	while (arKey < arEnd) { 
-		h = (h << 4) + *arKey++; 
-		if ((g = (h & 0xF0000000))) { 
-			h = h ^ (g >> 24); 
-			h = h ^ g; 
-		} 
-	} 
-	return h; */
 
 	size_t v = 0;
 	for( size_t i = 0; i != word.size(); ++i ){
