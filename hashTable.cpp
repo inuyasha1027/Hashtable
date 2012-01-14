@@ -114,6 +114,8 @@ int main(){
 	while( fin >> word )
 		test.insert( word );
 	test.display( fout );
+	fin.close();
+	fout.close();
 	system("pause");
 	return 0;
 }
